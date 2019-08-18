@@ -1,3 +1,9 @@
+font-face{
+    font-family:Iransans;
+    src:url("fonts/IRANSansweb.eot");
+    src:url("fonts/IRANSansweb.ttf")format("truetype"),url("fonts/IRANSansweb.woff")format("woff"),url("fonts/IRANSansweb.woff2")format("woff2")
+}
+
 body{
      direction: rtl;
      
@@ -75,6 +81,7 @@ body{
 #coment{
     background-color:rgb(177, 125, 125);
     width:68%;
+    font:12pt Iransans;
     min-height:300px;
     margin:5px; 
 }
