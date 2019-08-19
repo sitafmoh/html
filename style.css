@@ -75,6 +75,7 @@ body{
 #list{
     background-color:lightcoral;
     width:30%;
+    font:12pt Iransans;
     min-height:300px; 
     margin:5px; 
 }
@@ -93,6 +94,7 @@ body{
 #footer{
     background-color:aqua;
     width:100%;
+    font:12pt Iransans;
     min-height:150px;
     margin:5px;
 }
