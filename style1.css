@@ -6,11 +6,12 @@
 body{
     direction:rtl;
     color:#333;
-
+    font:10pt tahoma;
+    background-color: rgb(223, 243, 243) 
 }
 a{
-    text decoration:none;
-    color:#000;
+    text-decoration:none;
+    color:rgb(138, 48, 78);
 }
     .clear{
         clear:both;
@@ -18,17 +19,13 @@ a{
 }
 .container{
     width:1170;
-    border:1px solid #000;
     min-height:300px;
-    margin:0 auto;
-    margin-right:10px;
-    margin-left:10px;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px auto;
+   
 }
 .gallery-container{
-    padding:15px 5px;
-    overflow: auto;
+    padding:10px 10px;
+    overflow:auto;
 
 }   
 .gallery-container li{
@@ -37,16 +34,51 @@ a{
     width:19%;
     float:right;
     text-align: center;
-    border:1px solid rgb(252, 236, 236);
+    border:1px solid  rgb(223, 243, 243);
     margin-left:5px;
     margin-bottom:15px;
     padding:5px;
     cursor:pointer;
+    border-radius:5px;
 }
 .gallery-container .package:hover{
     box-shadow:0 0 5px rgba(0,0,0,0.4);
-
+    border-radius:5px;
+    
 }
 .gallery-container li img{
     clear:both;
+    margin:10px auto;
+    border-radius:5px;
+}
+ .gallery-container .package-title{
+        font:10pt tahoma;
+        display:block;
+        margin-bottom: 10px;
+       
+    }
+    .gallery-container .package-title:hover{
+    color:#999;
+    }
+.gallery-container .package .price{
+    font:10pt; tahoma;
+    color:red;
+    margin-bottom: 10px;
+}
+    .gallery-container .package .price:hover{
+        color:rgb(216, 78, 78);
+    }
+.gallery-container .add-to-cart{
+    background-color: bisque;
+    font:9pt tahoma;
+    display:inline-block;
+    border:1px solid rgb(161, 81, 81);
+    padding:5px 15px;
+    border-radius:5px;
+    margin-bottom: 10px;
+    
+}
+.gallery-container .add-to-cart:hover{
+    background-color:#fff;
+    
 }

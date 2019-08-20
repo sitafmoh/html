@@ -11,9 +11,12 @@ body{
 *{
     box-sizing:border-box;
 }
+a{
+    text-decoration:none;
+}
 #header{
-    background-color:aqua;
-    color:rgb(173, 46, 120);
+    background-color:rgb(188, 240, 235);
+    color:rgb(31, 3, 19);
     width:100%;
     min-height: 200px;
     text-align: center;
@@ -21,7 +24,7 @@ body{
 
 }
 #sidebar1{
-    background-color:mediumvioletred;
+    background-color:rgb(235, 184, 216);
     color:white;
     width:50%;
     min-height: 300px;
@@ -29,7 +32,7 @@ body{
     
 }
 #main-content{
-    background-color:rgb(217, 245, 94);
+    background-color:rgb(237, 238, 155);
     width:48%;
     min-height: 300px;
     margin:5px;
@@ -43,9 +46,9 @@ body{
     clear:both;
 }
 #names{
-    background-color: aquamarine;
+    background-color: rgb(183, 221, 208);
     width:40%;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 .names{
@@ -60,20 +63,20 @@ body{
    
 
 #header1{
-    background-color:rgb(217, 245, 94);
+    background-color:rgb(218, 231, 158);
     width:100%;
-    min-height: 250px;
+    min-height: 150px;
     text-align: center;
 
 }
 #header2{
-    background-color: rgb(185, 89, 110);
+    background-color: rgb(219, 188, 194);
     width:100%
     min-height:250px;
     text-align: center;
 }
 #list{
-    background-color:lightcoral;
+    background-color:rgb(243, 198, 198);
     width:30%;
     font:12pt Iransans;
     min-height:300px; 
@@ -92,25 +95,25 @@ body{
     
 }
 #footer{
-    background-color:aqua;
+    background-color:rgb(188, 240, 235);
     width:100%;
     font:12pt Iransans;
     min-height:150px;
     margin:5px;
 }
-
-#info{
-    background-color: aquamarine;
-    width:35%;
-    min-height:300px;
-
-}
-.info{
+.footer{
     display:inline-block;
     float:right;
 }
+
+#info{
+    background-color: rgb(183, 221, 208);
+    width:35%;
+    min-height:200px;
+
+}
 #gallery{
- background-color:rgb(17, 119, 88);   
+ background-color:rgb(157, 223, 203);   
  width:100%;
  min-height:200px;
  text-align: center;
@@ -127,14 +130,24 @@ div{
     padding:10px;
 }
 img{
-border:solid 2px rgb(21, 209, 200);
+border:solid 2px rgb(162, 224, 221);
 border-radius:20px 10px 20px 10px;
 padding:10px;
 margin: 20px;
-box-shadow:-5px -5px 5px 5px rgb(139, 137, 137)
+
+}
+img:hover{
+    box-shadow:0 0 5px rgba(0,0,0,0.4);
+    border-radius:5px;
 }
 a:hover{
-    color:rgb(19, 236, 243);
-    background-color:rgb(150, 14, 54);
+    color:rgb(169, 219, 221);
+    background-color:rgb(212, 162, 177);
 
+}
+.imageh{
+    margin-left: 30px;
+    margin-right: 5px;
+    text-align: center;
+    
 }
