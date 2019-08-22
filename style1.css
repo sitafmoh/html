@@ -7,7 +7,7 @@ body{
     direction:rtl;
     color:#333;
     font:10pt tahoma;
-    background-color: rgb(223, 243, 243) 
+    background-color: rgb(241, 241, 241) 
 }
 a{
     text-decoration:none;
@@ -34,16 +34,19 @@ a{
     width:19%;
     float:right;
     text-align: center;
-    border:1px solid  rgb(223, 243, 243);
+    border:1px solid  rgb(176, 184, 184);
     margin-left:5px;
     margin-bottom:15px;
     padding:5px;
     cursor:pointer;
     border-radius:5px;
+   
+
 }
 .gallery-container .package:hover{
     box-shadow:0 0 5px rgba(0,0,0,0.4);
     border-radius:5px;
+    background-color: rgb(247, 240, 232);
     
 }
 .gallery-container li img{
@@ -55,8 +58,15 @@ a{
         font:10pt tahoma;
         display:block;
         margin-bottom: 10px;
-       
+        
+  
+    
     }
+    .gallery-container .package{
+        transition:all 0.6s ease;
+        position: relative;
+        
+    }     
     .gallery-container .package-title:hover{
     color:#999;
     }
@@ -64,6 +74,7 @@ a{
     font:10pt; tahoma;
     color:red;
     margin-bottom: 10px;
+   
 }
     .gallery-container .package .price:hover{
         color:rgb(216, 78, 78);
@@ -76,9 +87,18 @@ a{
     padding:5px 15px;
     border-radius:5px;
     margin-bottom: 10px;
-    
-}
+ 
+    }
 .gallery-container .add-to-cart:hover{
     background-color:#fff;
-    
+
+}
+.gallery-container span{
+    background-color: crimson;
+    color:#fff;
+    padding:5px;
+    border-radius:10px;
+    position: absolute;
+    top:5px;
+    left:5px;
 }
