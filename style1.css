@@ -18,8 +18,9 @@ a{
     
 }
 .container{
-    width:1170;
-    margin:30px auto;
+    width:1170px;
+    margin:0px auto;
+ 
    
 }
 .gallery-container{
@@ -30,11 +31,11 @@ a{
 .gallery-container li{
     list-style:none;
     display:inline-block;
-    width:19%;
+    width:22%;
     float:right;
     text-align: center;
     border:1px solid  rgb(176, 184, 184);
-    margin-left:5px;
+    margin-left:30px;
     margin-bottom:15px;
     padding:5px;
     cursor:pointer;
@@ -110,8 +111,8 @@ li{
      width:1170px;
      margin:30px auto;
      min-height:300px;
-     border:1px solid rgb(214, 214, 214);
      clear:both;
+     
      
 }
 #menubar{
@@ -120,19 +121,21 @@ li{
     background-color:rgb(114, 59, 100);
     position: relative;
     
+    
 }
 #menubar >ul>li{
     list-style:none;
     display:inline-block;
     float:right;
-   
-
-}
+ 
+    
+   }
 #menubar >ul>li>a{
     color:#fff;
     margin-left:10px;
     padding:10px;
     display:block;
+     
     
     
 }
@@ -154,10 +157,14 @@ li{
     top:100%;
     box-shadow:0 0 10px rgba(0,0,0,0.2);
     width:1170px;
-        
+    min-height:200px;
+    
+
+    
 }
 #menubar>ul>li>ul>li{
     display:block;
+    
     
 }
 #menubar>ul>li>ul>li>a{
@@ -167,13 +174,63 @@ li{
     padding-right:5px;
     
     
-   
 }
 #menubar>ul>li>ul>li>a:hover{
     background-color:rgb(114, 59, 100);
     color:#fff;
+   
+    
 }  
-#menubar>ul>li>:hover>ul{
+#menubar>ul>li>:hover >ul{
+    display:block;
+    
+
+}
+.sidebar-menu{
+    text-align:justify;
+   
+}
+.sidebar-menu> li{
+    width:20%;
+    position: relative;
+    background-color:rgb(220, 214, 221);
+    display:block;
+    
+}
+
+.sidebar-menu> li>a{
+ padding:10px;
+ padding-right: 15px;
+ display:block;
+}
+.sidebar-menu> li>a:hover{
+    background-color: rgb(114, 59, 100);
+    color:white;
+
+}
+.sidebar-menu>li:hover >ul{
+    display:block;
+}
+.sidebar-menu>li>ul{
+    display:none;
+    width:250px;
+    position: absolute;
+    top:0;
+    right:100%;
+    background-color: #fff;
+    border:1px solid #efefef;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+.sidebar-menu>li>ul>li{
     display:block;
 
+}
+.sidebar-menu>li>ul>li>a{
+    padding:10px;
+    padding-right: 15px;
+    display:block;
+}
+.sidebar-menu>li>ul>li>a:hover{
+    background-color: rgb(114, 59, 100);
+    color:white;   
 }
