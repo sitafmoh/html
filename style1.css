@@ -181,7 +181,7 @@ li{
    
     
 }  
-#menubar>ul>li>:hover >ul{
+#menubar>ul>li:hover >ul{
     display:block;
     
 
@@ -220,6 +220,7 @@ li{
     background-color: #fff;
     border:1px solid #efefef;
     box-shadow:0 0 5px rgba(0,0,0,0.2);
+    z-index:100;
 }
 .sidebar-menu>li>ul>li{
     display:block;
