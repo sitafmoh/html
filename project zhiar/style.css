@@ -1,0 +1,48 @@
+*{
+    box-sizing:border-box;
+    direction:rtl;
+}
+body{
+    direction:rtl;
+    font:9pt tahoma;
+    color:#333;
+}
+a{
+    color:#eee;
+    
+}
+.clear{
+    clear:both;
+}
+#header-area{
+min-height:300px;
+background: url('images/header-bg.jpg') no-repeat;
+display: block;
+   
+}
+.container{
+    text-align: justify;
+    position: relative;
+}
+
+.col-sm-8{
+    position: relative;
+    display:inline-block;
+}
+.main-header{
+    padding: 40px 0 45px;
+    border-bottom: 3px solid #333;
+    
+    
+}
+.col-sm-4{
+    position: relative;
+    min-height: 1px;
+    width:33.33333333%;
+    display:inline-block;
+}
+.heading-with-border{
+    width:100%;
+    display:inline-block;
+    background-color: blue;
+}
