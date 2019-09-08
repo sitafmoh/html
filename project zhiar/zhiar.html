@@ -1,103 +1,555 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
-    <link href="bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
-    <title>ژیار آنلاین، فروشگاه انواع فیلم های آموزشی ورزشی هنر های رزمی، بدنسازی و دروس دانشگاهی</title>
-    <link href="style.css" rel="stylesheet" />
+  <link href="reset.css" rel="stylesheet" />
+  <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="static/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+  <link href="static/bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
+  <link href="static/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <title>ژيار آنلاين، فروشگاه انواع فيلم هاي آموزشي ورزشي هنر هاي رزمي، بدنسازي و دروس دانشگاهي</title>
+  <link href="style.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <header id="header-area">
-        <div class="container">
-            <div id="header-top">
-                <div class="row">
-                    <div class="col-sm-8 col-xs-12">
-                        <div class="header-links">
-                            <ul class="nav navbar-nav pull-right">
-                                <li><a href="/">صفحه اصلی</a></li>
-                                <li><a href="/login">ورود</a></li>
-                                <li><a href="/register">عضویت</a></li>
-                                <li><a href="/support">ارتباط با ما</a></li>
+  <div class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="row">
 
-                            </ul>
-                        </div>
+          <div class="col-sm-8 col-xs-12">
+            <div class="header-links">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="/">صفحه اصلي</a></li>
+                <li><a href="/login">ورود</a></li>
+                <li><a href="/register">عضويت</a></li>
+                <li><a href="/support">ارتباط با ما</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-xs-12">
+        <form action="http://www.google.com" method="get">
+          <div class="search-box">
+            <input type="text" id="search" name="q" placeholder="جستجو" />
+            <i class="fa fa-search fa-2x"></i>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div id="logo">
+          <a href="/">
+            <img class="img-responsive" src="img/logo-zhiaronline.png" />
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div id="cart" class="btn-group btn-block">
+          <div id="cart-container">
+            <button class="btn btn-block dropdown-toggle btn-lg" data-toggle="dropdown" type="button">
+              <i class="fa fa-shopping-cart fa-2x"></i>
+              <span class="">سبد خريد:</span>
+              <span id="cart-total">محصولي انتخاب نشده است </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <nav id="main-menu" class="navbar" role="navigation">
+
+    <div class="container">
+
+      <div class="navbar-header">
+
+        <ul class="nav navbar-nav">
+
+          <li><a href="/">مقالات آموزشي</a></li>
+          <li><a href="/">جديدترين ويديوها</a></li>
+          <li><a href="/">محبوب ترين ويديوها</a></li>
+          <li><a href="/">پرداخت اينترنتي</a></li>
+          <li><a href="/">سبد خريد</a></li>
+          <li><a href="/">اپليکيشن آندرويدي</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+  <div class="main-container container">
+
+    <div class="products-list">
+      <div class="container">
+        <div class="row">
+
+          <h2 class="heading-with-border">ويديوهاي منتخب</h2>
+          <div class="clear" style="height: 15px"></div>
+
+
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+            
+                <a href="/muay-thai-the-technical-basis.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail.ashx.jpg" alt="موی تای- تکنیک های پایه"/>
                     </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="pull left">
-
-                        </div>
-
-                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/muay-thai-the-technical-basis.html">موی تای- تکنیک های پایه</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                  
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="444"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                    
                 </div>
             </div>
-            <div class="main-header">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <form action="/search" class="form-inline">
-                            <div id="search">
-                                <div class="input-group">
-
-                                    <input class="form-control input-lg" name="q" type="text" placeholder="جستجو" />
-                                    <span class="input-group-btn"></span>
-
-                                </div>
-                            </div>
-                        </form>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+            
+                <a href="/kung-fu-techniques-with-and-without-weapons.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail1.ashx.jpg" alt="تمرینات کونگ فو با سلاح و بدون سلاح"/>
                     </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div id="logo">
-                            <a href="/">
-                                <img class="img-responsive" src="images/logo-zhiaronline.png"
-                                    alt="ژیار آنلاین، فروشگاه انواع فیلم های آموزشی ورزشی  هنر های رزمی، بدنسازی  و دروس دانشگاهی" />
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div id="cart" class="btn-group btn-block">
-                            <div id="cart-container">
-                                <button class="btn btn-block dropdown-toggle btn-lg" data-toggle="dropdown"
-                                    type="button">
-                                    <i class="fa fa-shopping-cart fa-2x"></i>
-                                    <span class="">سبد خرید:</span>
-                                    <span id="cart-total">محصولی انتخاب نشده است </span>
-                                    <i class="fa fa-caret-down"></i>
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/kung-fu-techniques-with-and-without-weapons.html">تمرینات کونگ فو با سلاح و بدون سلاح</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="443"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                    
                 </div>
             </div>
-        </div>
-    </header>
-    <nav id="main-menu" class="navbar" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="btn btn-navbar navbar-toggle" data-target=".navbar-cat-collapse" data-toggle="collapse"
-                    type="button">
-                    <span class="sr-only">منو</span>
-                    <i class="fa fa-bars fa-2x"></i>
-                </button>
-            </div>
-
-       
-
-                             </div>
-
-
-
-                        </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+             
+                <a href="/workout-and-stretching.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail2.ashx.jpg" alt="تمرین و کشش"/>
                     </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/workout-and-stretching.html">تمرین و کشش</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="442"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                 
+                </div>
             </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+            
+                <a href="/do-the-splits.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail3.ashx.jpg" alt="آموزش پا باز (180 درجه)"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/do-the-splits.html">آموزش پا باز (۱۸۰ درجه)</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+               >
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="441"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+              
+                <a href="/full-contact-from-beginner-to-advanced.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail4.ashx.jpg" alt="فول کنتاکت از مبتدی تا پیشرفته"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/full-contact-from-beginner-to-advanced.html">فول کنتاکت از مبتدی تا پیشرفته</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="440"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+               
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+              
+                <a href="/progression-kicks.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail5.ashx.jpg"alt="آموزش ضربات پیشرفته"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/progression-kicks.html">آموزش ضربات پیشرفته</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="439"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+              
+                <a href="/acrobatic-kicks.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail6.ashx.jpg" alt="ضربات آکروباتیک"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/acrobatic-kicks.html">ضربات آکروباتیک</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+              
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="438"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+            
+                <a href="/combo.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail7.ashx.jpg"alt="آموزش کومبو - ضربات پای ترکیبی"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/combo.html">آموزش کومبو - ضربات پای ترکیبی</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="437"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+             
+                <a href="/nunchaku.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail8.ashx.jpg" alt="نانچیکو"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/nunchaku.html">نانچیکو</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+              
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="436"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+         
+                <a href="/77-kicks.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail9.ashx.jpg" alt="77 ضربه پا"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/77-kicks.html">۷۷ ضربه پا</a>
+                </h3>
+                <div class="product-price">
+                    <span>۱۱/۰۰۰ تومان</span>
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="435"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+              
+                <a href="/tonfa-cobra-initiation.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail10.ashx.jpg" alt="تونفا- کبری"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/tonfa-cobra-initiation.html">تونفا- کبری</a>
+                </h3>
+                <div class="product-price">
+                    <span>۶/۰۰۰ تومان</span>
+                
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="434"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+              
+                <a href="/learn-nunchaku.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail11.ashx.jpg" alt="آموزش نانچیکو "/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/learn-nunchaku.html">آموزش نانچیکو </a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                  
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="433"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                    
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+             
+                <a href="/finalization-and-guard-passing-techniques.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail12.ashx.jpg" alt="جوجیتسوی برزیلی- تکنیک های چوک، پایان دادن و گارد نیمه"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/finalization-and-guard-passing-techniques.html">جوجیتسوی برزیلی- تکنیک های چوک، پایان دادن و گارد نیمه</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="432"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                    
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+              
+                <a href="/grappling-martial-arts-combinations.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail13.ashx.jpg" alt="جوجیتسو برزیلی- ترکیبات قلاب هنرهای رزمی"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/grappling-martial-arts-combinations.html">جوجیتسو برزیلی- ترکیبات قلاب هنرهای رزمی</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="431"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+            
+                <a href="/berimbolo-cross-face.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail14.ashx.jpg" alt="جوجیتسوی برزیلی-  BERIMBOLO - CROSS-FACE "/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/berimbolo-cross-face.html">جوجیتسوی برزیلی-  BERIMBOLO - CROSS-FACE </a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="430"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+               
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <div class="product-col"  itemscope itemtype="http://schema.org/Product">
+            
+                <a href="/brazilian-jiu-jitsu-advanced-techniques.html">
+                    <div class="product-picture" >
+                        <img class="img-responsive" itemprop="image" src="img/thumbnail15.ashx.jpg"alt="جوجیتسوی برزیلی- تکنیک های پیشرفته"/>
+                    </div>
+    
+                </a>
+                <h3 class="product-title">
+                    <a itemprop="url" href="/brazilian-jiu-jitsu-advanced-techniques.html">جوجیتسوی برزیلی- تکنیک های پیشرفته</a>
+                </h3>
+                <div class="product-price">
+                    <span>۷/۰۰۰ تومان</span>
+                 
+                    
+                </div>
+                <div class="cart-button button-group add-to-cart-container">
+                        <button  class="btn btn-cart add-to-cart" data-id="429"  type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            اضافه به سبد خرید
+                           
+                        </button>
+                    
+                    
+                </div>
+            </div>
+          </div>
+
+        
+          <div class="clear" style="height: 10px;"></div>
+          <div class="clear" style="height: 20px;"></div>
+          <h2 class="heading-with-border">آخرين مطالب وبلاگ</h2>
+          <div class="clear" style="height: 20px;"></div>
 
         </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>
