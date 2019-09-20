@@ -63,7 +63,10 @@ ul.megamenu li a:hover{
     color: red;
 }
 .telephone a:hover{
-    color: white;
+    color: red;
+}
+.search{
+    border-radius: 3px;
 }
 .signin-link{
     padding-top: 10px;
@@ -75,18 +78,17 @@ ul.megamenu li a:hover{
 .all-category{
     border: 1px solid #ff3c20;
     background-color: #ff3c20;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     border-radius: 4px 4px 0px 0px;
     position: relative;
-    font-size: 17px;
+    font-size: 15px;
 }
 .all-category::before{
     content: "\f0c9";
     font-family: fontawesome;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
-    top: 10px;
     right: 20px;
     color: white;
 }
@@ -95,7 +97,6 @@ ul.megamenu li a:hover{
     font-family: fontawesome;
     font-size: 12px;
     position: absolute;
-    top: 10px;
     left: 20px;
     color: white;
 }
@@ -105,27 +106,25 @@ li{
 
 .search-header-w{
     position: relative;
-    padding: 10px;
+    padding: 3px;
 }
 
 #sosearchpro .search button{
-position: absolute;
-right: 0px;
+right: 0;
 bottom:0;
 height: 34px;
 text-align: center;
-line-height: 20px;
+line-height: 10px;
 padding: 0 35px;
 font-size: 14px;
 color: #fff;
 border-radius: 0;
-background-color: #ff3c20;
+border: 1px solid #ff3c20;
+background: #ff3c20;
+
     
 }
-.input-group {
-    border-collapse: separate;
 
-}
 #sosearchpro .select_category {
     position: relative;
     display: table-cell;
@@ -135,8 +134,19 @@ background-color: #ff3c20;
     border-bottom-right-radius: 0px !important;
     background: white;
     outline:none;
+    text-align:center;
+    padding-left:-5px;
+    padding-right:2px;
  
 }
+
+select{
+    border:none;
+}
+
+
+
+
 
 
 
