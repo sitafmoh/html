@@ -12,10 +12,10 @@ body{
     text-align: justify;
     line-height: 26px;
     color: #666;
+    overflow-x:hidden;
 }
-div{
-    overflow: hidden;
-}
+
+
 .clear{
     clear: both;
 }
@@ -103,6 +103,9 @@ h2{
     left: 20px;
     color: white;
 }
+.select_category{
+    border-radius: 0 4px 4px 0 ;  
+}
 li{
     list-style: none;
 }
@@ -110,6 +113,7 @@ li{
 .search-header-w{
     position: relative;
     padding: 3px;
+    
 }
 
 #sosearchpro .search button{
@@ -121,9 +125,10 @@ line-height: 10px;
 padding: 0 35px;
 font-size: 14px;
 color: #fff;
-border-radius: 0;
+border-radius:0;
 border: 1px solid #ff3c20;
 background: #ff3c20;
+border-radius: 4px 0  0 4px ;
 
     
 }
@@ -133,8 +138,6 @@ background: #ff3c20;
     display: table-cell;
     vertical-align: top;
     border: 1px solid #e5e5e5;
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
     background: white;
     outline:none;
     text-align:center;
@@ -143,42 +146,83 @@ background: #ff3c20;
  
 }
 
+
 select{
     border:none;
 }
-.menubar ul li{
-display:inline-block;
-margin-bottom: 50px;
-vertical-align: top;
 
-
+.main-menu .header-link .container ul li {
+    float: right;
+    margin-left: 5px;
 }
-.menubar li a{
-    padding:5px 8px;
-    float:left;
-    display:block;
-    width:100%;
+.main-menu .header-link .container ul li a {
+    padding:5px;
+    display: block;
+}
+.header-link .container ul li:hover .mega-menu {
+    display: block;
+}
+.header-link .container .menu-title {
+    font-size: 12pt;
+    color: black;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+ 
+.menu-list ul li{
+    padding-bottom:0;
+}
+
+.header-link .container .menu-list > ul >li >a {
+    color: #666;
+    font-size: 11px;
     
     
 }
-
-.dropdown  ul  li  {
-display:block; 
-opacity:0; 
-
-
-}
-.dropdown:hover ul li {
-    opacity:1;
+.header-link .container .menu-page > ul >li >a {
+    color: #666;
+    font-size: 11px;
+    
 }
 
-.submenu ul li{
-    display:block;
-    opacity:0;
+ .header-link .container .menu-list > ul >li >a:hover{
+    color: #ff3c20;
+    
 }
-.submenu:hover ul li{
-    opacity:1;
+
+.header-link .mega-menu ul li {
+  width: 100% !important;
 }
+
+.mega-menu{
+    display: none;
+    min-height: 150px;
+    min-width: 600px;
+    z-index:100;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    right: 0;
+    left: 0;
+}
+.mega-menu .menu-list #lastmenu{
+    min-width: 300px;  
+}
+
+.span-new{
+position: absolute;
+bottom: 41px;
+left: 30px;
+
+ }
+   
+.span-hot{
+position: absolute;
+bottom: 40px;
+   } 
+ 
+   
 
 
 
