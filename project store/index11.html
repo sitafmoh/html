@@ -27,6 +27,15 @@
         });
     </script>
     <script>
+    function() {
+        $('html').addClass('overflow-hidden');
+        $($(this).attr('data-popup')).removeClass('popup-hidden');
+        $('.popup').animate({
+          scrollTop: '0px'
+        }, 500);
+      }
+    </script>
+    <script>
             $(document).ready(function () {
                 $('.item-product').slick({
                     infinite: true,
@@ -85,7 +94,7 @@
         <div class="header-top">
             <div class="container">
 
-                <div class="row">
+                <div class="row" >
                     <div class="col-sm-2 col-xs-12">
                         <div id="logo">
                             <a href="/">
@@ -292,7 +301,8 @@
                                 </li>
                             </ul>
                         </div>
-
+            
+                
                         <div class="telephone hidden-xs hidden-sm hidden-md">
                             <ul>
                                 <li>
@@ -312,7 +322,7 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-right:-40px;">
                     <div class="all-category col-sm-3 col-xs-12">
                         <a href="#"><strong>دسته بندی کالاها</strong></a>
                     </div>
@@ -320,7 +330,7 @@
 
 
                     <div class="bottom2 col-sm-7 col-xs-12">
-                        <div class="search-header-w">
+                        <div class="search-header-w" style="margin-right:32px;">
                             <div class="icon-search hidden-lg hidden-md hidden-sm"><i class="fa fa-search"></i></div>
 
                             <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
@@ -413,13 +423,29 @@
                                     <strong>لوازم الکتریکی بهینه</strong>
                                     <i class="fa fa-angle-left" style=" position: absolute;
                                                left:10px;"></i>
-                                </a> </li>
+                                </a> 
+                                <ul>
+                                        <li><a href="#">اپل </a></li>
+                                        <li><a href="#">دل </a></li>
+                                        <li><a href="#">اسیپیسینگ </a></li>
+                                        <li><a href="#">اسکنر </a></li>
+                                        <li><a href="#"> سونی </a></li>
+                                        <li><a href="#"> توشیبا </a></li>
+                                    </ul></li>
                             <li class="list-group-item"><a href="/">
                                     <i class="fa fa-bath"></i>
                                     <strong> لوازم حمام</strong>
                                     <i class="fa fa-angle-left" style=" position: absolute;
                                                left:10px;"></i>
-                                </a> </li>
+                                </a> 
+                                <ul>
+                                        <li><a href="#">اپل </a></li>
+                                        <li><a href="#">دل </a></li>
+                                        <li><a href="#">اسیپیسینگ </a></li>
+                                        <li><a href="#">اسکنر </a></li>
+                                        <li><a href="#"> سونی </a></li>
+                                        <li><a href="#"> توشیبا </a></li>
+                                    </ul></li>
                             <li class="list-group-item"><a href="/">
                                     <i class="fa fa-heartbeat"></i>
                                     <strong>سلامت و زیبایی</strong>
@@ -445,7 +471,7 @@
                 </div>
 
                 <div class="col-sm-3  col-xs-12  pull-right">
-                    <img alt="image" src="img/banner4.jpg" style="margin:15px 33px; 0 0" />
+                    <img alt="image" src="img/banner4.jpg" style="margin:15px 33px;" sizes="240px" />
                 </div>
                 <div class="col-sm-12  col-xs-12  pull-right">
                     <h4 class="modtitle"><strong> آخرین محصولات</strong></h4>
@@ -748,7 +774,7 @@
                             </div>
                             <div class="item-price">
     
-                                <strong>12،000،000 تومان </strong>
+                                <strong>1،300،000 تومان </strong>
     
                             </div>
     
@@ -823,7 +849,7 @@
                             </div>
                             <div class="item-price">
     
-                                <strong>2،500،000 تومان </strong>
+                                <strong> 560،000 تومان </strong>
     
                             </div>
     
@@ -847,9 +873,9 @@
     <div class="col-sm-2 col-xs-12 ">
         <div class="left-block">
             <div class="clear" style="height: 45px"></div>
-            <a href="#"><img src="img/banner1.jpg" alt="banner" size="274px" /> </a>
+            <a href="#"><img src="img/banner1.jpg" alt="banner" size="274px"style="width:200% margin-top: 5px;" /> </a>
             <div class="clear" style="height: 15px"></div>
-            <a href="#"><img src="img/banner2.jpg" alt="banner" size="274px" /> </a>
+            <a href="#"><img src="img/banner2.jpg" alt="banner" size="274px" style="width:200%" /> </a>
         </div>
 
     </div>
@@ -889,7 +915,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12" style="background-color: #f7f7f7;margin-right: 15px" >
                     <div class="product-info">
                         <div class="product-title">
                             <a href="#">
@@ -900,7 +926,7 @@
                         <div class="product-price">
 
                             <strong> 5،000،000 تومان</strong>
-
+                            <span class="price-old" style="color: #999;font-size: 1.2rem;font-weight: normal; text-decoration: line-through;">5،800،000</span>
                         </div>
 
                         <a href="#" class="add-to-cart" data-id="133" style="color:#ff3c20;"> <i
@@ -909,11 +935,11 @@
 
                     </div>
                     <div class="row">
-
+                           
                         <p class="col-xs-6 a1" style="padding-top:20px;">موجودی: <b>97</b> </p>
                         <p class="col-xs-6 a2" style="padding-top:20px;">فروش: <b>33</b> </p>
                     </div>
-
+                    <div class="clear" style="height: 40.5px"></div>
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <div class="product">
@@ -929,7 +955,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12" style="background-color: #f7f7f7;margin-right: 15px">
                     <div class="product-info">
                         <div class="product-title">
                             <a href="#">
@@ -940,7 +966,7 @@
                         <div class="product-price">
 
                             <strong>7،000،000 تومان </strong>
-
+                            <span class="price-old" style="color: #999;font-size: 1.2rem;font-weight: normal; text-decoration: line-through;">8،800،000</span>
                         </div>
                         <a href="#" class="add-to-cart" data-id="133" style="color:#ff3c20;"> <i
                                 class="fa fa-shopping-basket"></i>
@@ -951,6 +977,7 @@
                         <p class="col-xs-6 a1" style="padding-top:20px;">موجودی: <b>55</b> </p>
                         <p class="col-xs-6 a2" style="padding-top:20px;">فروش: <b>2</b> </p>
                     </div>
+                    <div class="clear" style="height: 40.5px"></div>
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <div class="product">
@@ -966,7 +993,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12" style="background-color: #f7f7f7;margin-right: 15px">
                     <div class="product-info">
                         <div class="product-title">
                             <a href="#">
@@ -990,7 +1017,7 @@
                         <p class="col-xs-6 a1" style="padding-top:20px;">موجودی: <b>97</b> </p>
                         <p class="col-xs-6 a2" style="padding-top:20px;">فروش: <b>33</b> </p>
                     </div>
-
+                    <div class="clear" style="height: 40.5px"></div>
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <div class="product">
@@ -1006,7 +1033,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12" style="background-color: #f7f7f7;margin-right: 15px">
                     <div class="product-info">
                         <div class="product-title">
                             <a href="#">
@@ -1016,8 +1043,8 @@
 
                         <div class="product-price">
 
-                            <strong> 2،200،000 تومان</strong>
-
+                            <strong> 1،200،000 تومان</strong>
+                            <span class="price-old" style="color: #999;font-size: 1.2rem;font-weight: normal; text-decoration: line-through;">2،000،000</span>
                         </div>
 
                         <a href="#" class="add-to-cart" data-id="133" style="color:#ff3c20;"> <i
@@ -1030,7 +1057,7 @@
                         <p class="col-xs-6 a1" style="padding-top:20px;">موجودی: <b>97</b> </p>
                         <p class="col-xs-6 a2" style="padding-top:20px;">فروش: <b>33</b> </p>
                     </div>
-
+                    <div class="clear" style="height: 40.5px"></div>
                 </div>
                 <div class="col-sm-3 col-xs-12">
                     <div class="product">
@@ -1046,7 +1073,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12" style="background-color: #f7f7f7;margin-right: 15px">
                     <div class="product-info">
                         <div class="product-title">
                             <a href="#">
@@ -1070,7 +1097,7 @@
                         <p class="col-xs-6 a1" style="padding-top:20px;">موجودی: <b>97</b> </p>
                         <p class="col-xs-6 a2" style="padding-top:20px;">فروش: <b>33</b> </p>
                     </div>
-
+                    <div class="clear" style="height: 40.5px"></div>
                 </div>
                 
                 <div class="col-sm-3 col-xs-12">
@@ -1087,7 +1114,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12" style="background-color: #f7f7f7;margin-right: 15px">
                     <div class="product-info">
                         <div class="product-title">
                             <a href="#">
@@ -1111,6 +1138,7 @@
                         <p class="col-xs-6 a1" style="padding-top:20px;">موجودی: <b>97</b> </p>
                         <p class="col-xs-6 a2" style="padding-top:20px;">فروش: <b>33</b> </p>
                     </div>
+                    <div class="clear" style="height: 40.5px"></div>
                 </div>
             </div>
 
@@ -1127,33 +1155,81 @@
 
 
 
-            <div class="clear" style="height: 15px"></div>
+            <div class="clear" style="height:65px"></div>
 
-            <div class="middle-menu">
-                <div class="container">
-                    <div class="navbar-middle"></div>
-
-                    <div class="collapse navbar-collapse" id="Navbar">
-                        <ul class="links">
-                            <li class="pull-right">
-                                <a href="#">
-                                    <h3 class="modtitle"><span>محصولات مد روز</span></h3>
-                                </a>
-                            </li>
-                            <li><a href="#">دل </a></li>
-                            <li><a href="#">اسیپیسینگ </a></li>
-                            <li><a href="#">اسکنر </a></li>
-                            <li><a href="#"> سونی </a></li>
-                            <li><a href="#"> توشیبا </a></li>
-
-                        </ul>
-
+            <div class="module so-listing-tabs-ltr listingtab-layout1">
+                    <h3 class="modtitle">
+                    <span style="margin-inline-start: 15px;">محصولات مد روز</span>	</h3>
+                    <div class="modcontent">
+                    <div id="so_listing_tabs_69" class="so-listing-tabs first-load module">
+                    <div class="ltabs-wrap ">
+                    <div class="ltabs-tabs-container" data-delay="500"
+                    data-duration="800"
+                    data-effect="none"
+                    data-ajaxurl="http://opencart.opencartworks.com/themes/so_emarket/" data-type_source="0"
+                    data-type_show="slider" >
+                    
+                    <div class="ltabs-tabs-wrap">
+                    <span class='ltabs-tab-selected'></span>
+                    <span class="ltabs-tab-arrow">▼</span>
+                    <ul class="ltabs-tabs cf list-sub-cat font-title">
+                    
+                            <li class="ltabs-tab   tab-sel tab-loaded  tab-all"
+                    data-category-id="*"
+                    data-active-content-l=".items-category-all"  
+                    >
+                            <span class="ltabs-tab-label">
+                                            همه محصولات 
+                                    </span>
+                    </li>
+                                        <li class="ltabs-tab  "
+                    data-category-id="67"
+                    data-active-content-l=".items-category-67"  
+                    >
+                            <span class="ltabs-tab-label">
+                                            حمام
+                                    </span>
+                    </li>
+                                        <li class="ltabs-tab  "
+                    data-category-id="68"
+                    data-active-content-l=".items-category-68"  
+                    >
+                            <span class="ltabs-tab-label">
+                                            اتاق خواب
+                                    </span>
+                    </li>
+                                        <li class="ltabs-tab  "
+                    data-category-id="27"
+                    data-active-content-l=".items-category-27"  
+                    >
+                            <span class="ltabs-tab-label">
+                                            دکوراسیون
+                                    </span>
+                    </li>
+                                        <li class="ltabs-tab  "
+                    data-category-id="65"
+                    data-active-content-l=".items-category-65"  
+                    >
+                            <span class="ltabs-tab-label">
+                                            مبلمان
+                                    </span>
+                    </li>
+                                        <li class="ltabs-tab  "
+                    data-category-id="26"
+                    data-active-content-l=".items-category-26"  
+                    >
+                            <span class="ltabs-tab-label">
+                                           اتاق نشیمن   
+                                    </span>
+                    </li>
+                    </ul>
                     </div>
-                </div>
-            </div>
+                    
+                    
+                    </div>
+                    </div>
 
-
-            <div class=" col-sm-12 col-xs-12 pull-left ">
+                    </div></div></div>
                 <div class="clear" style="height: 15px"></div>
                 <div class="clear" style="height: 10px"></div>
 
@@ -1172,18 +1248,30 @@
 
                 <div class="clear" style="height: 30px"></div>
 
-
+               
                 <div class="item-product1 slick-wrapper-sugested">
                 <div class="col-sm-2 col-xs-12">
                     <div class="main-product">
                         <a href="#">
                             <div class="grade-wrapper">
-                                <img alt="image" src="img/8-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                    <span class="label-product label-product-sale">
+                                            10%-</span>
+                                <img alt="image" src="img/8-270x270.jpg" style="max-width:180px;" sizes="173px" />
                     </a>
 
                     </div>
                 </div>
-                <div class="col-sm-12 col-xs-12">
+                <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+                clear: both;
+                
+                padding: 12px 12px 20px 12px;
+                
+                text-align: center;
+                
+                position: relative;
+                
+                background-color: #f7f7f7;" >
                         <div class="item-info">
                          <div class="rating">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1195,12 +1283,12 @@
                             </div>
                             <div class="item-title">
                                     <a href="#">
-                                        اپل واچ 
+                                         صندلی اداری 
                                     </a>
                                 </div>
                             <div class="item-price">
     
-                                <strong>12،000،000 تومان </strong>
+                                <strong>1،200،000 تومان </strong>
     
                             </div>
     
@@ -1213,11 +1301,21 @@
                     <div class="main-product">
                         <a href="#">
                             <div class="grade-wrapper">
-                                <img alt="image" src="img/10-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                <img alt="image" src="img/10-270x270.jpg" style="max-width:180px;" sizes="173px" />
                         </a>
                     </div>
                     </div>
-                    <div class="col-sm-12 col-xs-12">
+                    <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+                    clear: both;
+                    
+                    padding: 12px 12px 20px 12px;
+                    
+                    text-align: center;
+                    
+                    position: relative;
+                    
+                    background-color: #f7f7f7;">
                             <div class="item-info">
                              <div class="rating">
                                         <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1229,12 +1327,12 @@
                                 </div>
                                 <div class="item-title">
                                         <a href="#">
-                                            اپل واچ 
+                                             پتو مسافرتی  
                                         </a>
                                     </div>
                                 <div class="item-price">
         
-                                    <strong>12،000،000 تومان </strong>
+                                    <strong>85،000 تومان </strong>
         
                                 </div>
         
@@ -1246,11 +1344,23 @@
                         <div class="main-product">
                             <a href="#">
                                 <div class="grade-wrapper">
-                                    <img alt="image" src="img/20-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                        <span class="label-product label-product-sale">
+                                                23%-</span>
+                                    <img alt="image" src="img/20-270x270.jpg" style="max-width:180px;" sizes="173px" />
                             </a>
                         </div>
                         </div>
-                        <div class="col-sm-12 col-xs-12">
+                        <div class="col-sm-12 col-xs-12"style="width: 108%;
+
+                        clear: both;
+                        
+                        padding: 12px 12px 20px 12px;
+                        
+                        text-align: center;
+                        
+                        position: relative;
+                        
+                        background-color: #f7f7f7;">
                                 <div class="item-info">
                                  <div class="rating">
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1262,12 +1372,12 @@
                                     </div>
                                     <div class="item-title">
                                             <a href="#">
-                                                اپل واچ 
+                                                صندلی راحتی  
                                             </a>
                                         </div>
                                     <div class="item-price">
             
-                                        <strong>12،000،000 تومان </strong>
+                                        <strong>2،000،000 تومان </strong>
             
                                     </div>
             
@@ -1279,11 +1389,21 @@
                             <div class="main-product">
                                 <a href="#">
                                     <div class="grade-wrapper">
-                                        <img alt="image" src="img/3-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                        <img alt="image" src="img/3-270x270.jpg" style="max-width:180px;" sizes="173px" />
                                 </a>
                             </div>
                             </div>
-                            <div class="col-sm-12 col-xs-12">
+                            <div class="col-sm-12 col-xs-12"style="width: 108%;
+
+                            clear: both;
+                            
+                            padding: 12px 12px 20px 12px;
+                            
+                            text-align: center;
+                            
+                            position: relative;
+                            
+                            background-color: #f7f7f7;">
                                     <div class="item-info">
                                      <div class="rating">
                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1295,12 +1415,12 @@
                                         </div>
                                         <div class="item-title">
                                                 <a href="#">
-                                                    اپل واچ 
+                                                    مبل  
                                                 </a>
                                             </div>
                                         <div class="item-price">
                 
-                                            <strong>12،000،000 تومان </strong>
+                                            <strong>1،700،000 تومان </strong>
                 
                                         </div>
                 
@@ -1313,12 +1433,22 @@
                                 <div class="main-product">
                                     <a href="#">
                                         <div class="grade-wrapper">
-                                            <img alt="image" src="img/18-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                            <img alt="image" src="img/18-270x270.jpg" style="max-width:180px;" sizes="173px" />
                                     </a>
                                 </div>
                                 </div>
                                 
-                                <div class="col-sm-12 col-xs-12">
+                                <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+                                clear: both;
+                                
+                                padding: 12px 12px 20px 12px;
+                                
+                                text-align: center;
+                                
+                                position: relative;
+                                
+                                background-color: #f7f7f7;">
                                         <div class="item-info">
                                          <div class="rating">
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1330,12 +1460,12 @@
                                             </div>
                                             <div class="item-title">
                                                     <a href="#">
-                                                        اپل واچ 
+                                                        گلدان  
                                                     </a>
                                                 </div>
                                             <div class="item-price">
                     
-                                                <strong>12،000،000 تومان </strong>
+                                                <strong>450،000 تومان </strong>
                     
                                             </div>
                     
@@ -1351,11 +1481,21 @@
                     <div class="main-product">
                         <a href="#">
                             <div class="grade-wrapper">
-                                <img alt="image" src="img/14-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                <img alt="image" src="img/14-270x270.jpg" style="max-width:180px;" sizes="173px" />
                         </a>
                     </div>
                     </div>
-                    <div class="col-sm-12 col-xs-12">
+                    <div class="col-sm-12 col-xs-12"style="width: 108%;
+
+                    clear: both;
+                    
+                    padding: 12px 12px 20px 12px;
+                    
+                    text-align: center;
+                    
+                    position: relative;
+                    
+                    background-color: #f7f7f7;">
                             <div class="item-info">
                              <div class="rating">
                                         <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1367,12 +1507,12 @@
                                 </div>
                                 <div class="item-title">
                                         <a href="#">
-                                            اپل واچ 
+                                            چراغ مطالعه  
                                         </a>
                                     </div>
                                 <div class="item-price">
         
-                                    <strong>12،000،000 تومان </strong>
+                                    <strong>170،000 تومان </strong>
         
                                 </div>
         
@@ -1400,12 +1540,22 @@
                         <div class="main-product">
                             <a href="#">
                                 <div class="grade-wrapper">
-                                    <img alt="image" src="img/11-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                    <img alt="image" src="img/11-270x270.jpg" style="max-width:180px;" sizes="173px" />
                         </a>
     
                         </div>
                     </div>
-                    <div class="col-sm-12 col-xs-12">
+                    <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+                    clear: both;
+                    
+                    padding: 12px 12px 20px 12px;
+                    
+                    text-align: center;
+                    
+                    position: relative;
+                    
+                    background-color: #f7f7f7;">
                             <div class="item-info">
                              <div class="rating">
                                         <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1417,12 +1567,12 @@
                                 </div>
                                 <div class="item-title">
                                         <a href="#">
-                                            اپل واچ 
+                                            کوسن مبل  
                                         </a>
                                     </div>
                                 <div class="item-price">
         
-                                    <strong>12،000،000 تومان </strong>
+                                    <strong>59،000 تومان </strong>
         
                                 </div>
         
@@ -1435,11 +1585,21 @@
                         <div class="main-product">
                             <a href="#">
                                 <div class="grade-wrapper">
-                                    <img alt="image" src="img/13-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                    <img alt="image" src="img/13-270x270.jpg" style="max-width:180px;" sizes="173px" />
                             </a>
                         </div>
                         </div>
-                        <div class="col-sm-12 col-xs-12">
+                        <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+                        clear: both;
+                        
+                        padding: 12px 12px 20px 12px;
+                        
+                        text-align: center;
+                        
+                        position: relative;
+                        
+                        background-color: #f7f7f7;">
                                 <div class="item-info">
                                  <div class="rating">
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1451,12 +1611,12 @@
                                     </div>
                                     <div class="item-title">
                                             <a href="#">
-                                                اپل واچ 
+                                                کیف عروسکی  
                                             </a>
                                         </div>
                                     <div class="item-price">
             
-                                        <strong>12،000،000 تومان </strong>
+                                        <strong>140،000 تومان </strong>
             
                                     </div>
             
@@ -1468,11 +1628,22 @@
                             <div class="main-product">
                                 <a href="#">
                                     <div class="grade-wrapper">
-                                        <img alt="image" src="img/15-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                           
+                                        <img alt="image" src="img/15-270x270.jpg" style="max-width:180px;" sizes="173px" />
                                 </a>
                             </div>
                             </div>
-                            <div class="col-sm-12 col-xs-12">
+                            <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+                            clear: both;
+                            
+                            padding: 12px 12px 20px 12px;
+                            
+                            text-align: center;
+                            
+                            position: relative;
+                            
+                            background-color: #f7f7f7;">
                                     <div class="item-info">
                                      <div class="rating">
                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1484,12 +1655,12 @@
                                         </div>
                                         <div class="item-title">
                                                 <a href="#">
-                                                    اپل واچ 
+                                                     جا موبایلی 
                                                 </a>
                                             </div>
                                         <div class="item-price">
                 
-                                            <strong>12،000،000 تومان </strong>
+                                            <strong>85،000 تومان </strong>
                 
                                         </div>
                 
@@ -1501,11 +1672,21 @@
                                 <div class="main-product">
                                     <a href="#">
                                         <div class="grade-wrapper">
-                                            <img alt="image" src="img/9-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                            <img alt="image" src="img/9-270x270.jpg" style="max-width:180px;" sizes="173px" />
                                     </a>
                                 </div>
                                 </div>
-                                <div class="col-sm-12 col-xs-12">
+                                <div class="col-sm-12 col-xs-12"style="width: 108%;
+
+                                clear: both;
+                                
+                                padding: 12px 12px 20px 12px;
+                                
+                                text-align: center;
+                                
+                                position: relative;
+                                
+                                background-color: #f7f7f7;">
                                         <div class="item-info">
                                          <div class="rating">
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1517,12 +1698,12 @@
                                             </div>
                                             <div class="item-title">
                                                     <a href="#">
-                                                        اپل واچ 
+                                                        حوله  
                                                     </a>
                                                 </div>
                                             <div class="item-price">
                     
-                                                <strong>12،000،000 تومان </strong>
+                                                <strong>330،000 تومان </strong>
                     
                                             </div>
                     
@@ -1534,11 +1715,23 @@
                                     <div class="main-product">
                                         <a href="#">
                                             <div class="grade-wrapper">
-                                                <img alt="image" src="img/16-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                                                    <span class="label-product label-product-sale">
+                                                            18%-</span>
+                                                <img alt="image" src="img/16-270x270.jpg" style="max-width:180px;" sizes="173px" />
                                         </a>
                                     </div>
                                     </div>
-                                    <div class="col-sm-12 col-xs-12">
+                                    <div class="col-sm-12 col-xs-12"style="width: 108%;
+
+                                    clear: both;
+                                    
+                                    padding: 12px 12px 20px 12px;
+                                    
+                                    text-align: center;
+                                    
+                                    position: relative;
+                                    
+                                    background-color: #f7f7f7;">
                                             <div class="item-info">
                                              <div class="rating">
                                                         <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1550,12 +1743,12 @@
                                                 </div>
                                                 <div class="item-title">
                                                         <a href="#">
-                                                            اپل واچ 
+                                                            ساعت دیواری  
                                                         </a>
                                                     </div>
                                                 <div class="item-price">
                         
-                                                    <strong>12،000،000 تومان </strong>
+                                                    <strong>200،000 تومان </strong>
                         
                                                 </div>
                         
@@ -1566,11 +1759,21 @@
             <div class="main-product">
                 <a href="#">
                     <div class="grade-wrapper">
-                        <img alt="image" src="img/5-270x270.jpg" style="max-width:190px;" sizes="173px" />
+                        <img alt="image" src="img/5-270x270.jpg" style="max-width:180px;" sizes="173px" />
                 </a>
             </div>
             </div>
-            <div class="col-sm-12 col-xs-12">
+            <div class="col-sm-12 col-xs-12" style="width: 108%;
+
+            clear: both;
+            
+            padding: 12px 12px 20px 12px;
+            
+            text-align: center;
+            
+            position: relative;
+            
+            background-color: #f7f7f7;">
                     <div class="item-info">
                      <div class="rating">
                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x" style="color:yellow"></i></span>
@@ -1582,12 +1785,12 @@
                         </div>
                         <div class="item-title">
                                 <a href="#">
-                                    اپل واچ 
+                                    نیمکت  
                                 </a>
                             </div>
                         <div class="item-price">
 
-                            <strong>12،000،000 تومان </strong>
+                            <strong>1،200،000 تومان </strong>
 
                         </div>
 
@@ -1596,13 +1799,14 @@
                 </div>
         </div>
     </div>
-</div>
+
     
             <div class="clear" style="height:55px"></div>
            
           <div class="col-sm-3 col-xs-12">
             <div class="banners banners6">
                     <div class="banner">
+                        
                         <a href="#"><img src="img/banner11.jpg " alt="image"></a>
                     </div>
                     
@@ -1610,7 +1814,7 @@
                 <div class="clear" style="height: 25px"></div>
              <div class="banners banners6">
                                 <div class="banner">
-                                    <a href="#"><img src="img/banner12.jpg " alt="image"></a>
+                                    <a href="#"><img src="img/banner12.jpg " style="margin-top:12px;" alt="image"></a>
                                 </div>
                             </div>
 </div>
@@ -1632,7 +1836,7 @@
                         <div class="clear" style="height: 25px"></div>
                      <div class="banners banners6">
                                         <div class="banner">
-                                            <a href="#"><img src="img/banner9.jpg " alt="image"></a>
+                                            <a href="#"><img src="img/banner9.jpg "style="margin-top:12px;" alt="image"></a>
                                         </div>
                                     </div>
                                    
@@ -1646,123 +1850,183 @@
                 <div class="col-sm-2 col-xs-12">
                   <div class="banners banners6">
                           <div class="banner">
-                              <a href="#"><img src="img/14-270x270.jpg " sizes="163px" alt="image"></a>
+                              <a href="#"><span class="label-product label-product-sale">
+                                    19%-</span><img src="img/14-270x270.jpg " sizes="163px" alt="image"></a>
                           </div>
+                          <div class="col-sm-12 col-xs-12" style="width: 100%;
+                         clear: both;
+                         padding: 12px 12px 20px 12px;
+                         text-align: center;
+                         position: relative;
+                         background-color: #f7f7f7;">
                           <div class="item-title">
                                 <a href="#">
-                                    اپل واچ 
+                                     چراغ مطالعه 
                                 </a>
                             </div>
                         <div class="item-price">
 
-                            <strong>12،000،000 تومان </strong>
+                            <strong style="color:#ff3c20;">55،000 تومان </strong>
 
                         </div>
                       </div>
+                    </div>
                       <div class="clear" style="height: 25px"></div>
                    <div class="banners banners6">
                                       <div class="banner">
-                                          <a href="#"><img src="img/11-270x270.jpg " sizes="163px" alt="image"></a>
+                                          <a href="#"><span class="label-product label-product-sale">
+                                                3%-</span><img src="img/11-270x270.jpg " sizes="163px" alt="image"></a>
                                       </div>
+                                      <div class="col-sm-12 col-xs-12"style="width: 100%;
+                                      clear: both;
+                                      padding: 12px 12px 20px 12px;
+                                      text-align: center;
+                                      position: relative;
+                                      background-color: #f7f7f7;">
                                       <div class="item-title">
                                             <a href="#">
-                                                اپل واچ 
+                                                 کوسن مبل  
                                             </a>
                                         </div>
-                                    <div class="item-price">
+                                    <div class="item-price" style="color:#ff3c20;">
             
-                                        <strong>12،000،000 تومان </strong>
+                                        <strong style="color:#ff3c20;">90،000 تومان </strong>
             
                                     </div>
                                   </div>
+                                </div>
                                   
                                   
-                                  
+                            </div>                
       </div>
       <div class="col-sm-2 col-xs-12">
             <div class="banners banners6">
                     <div class="banner">
-                        <a href="#"><img src="img/8-270x270.jpg " sizes="163px" alt="image"></a>
+                        <a href="#"><img src="img/8-270x270.jpg " style="margin-right:11px;"sizes="163px" alt="image"></a>
                     </div>
-                    <div class="item-title">
-                          <a href="#">
-                              اپل واچ 
+                    <div class="col-sm-12 col-xs-12" style="width: 100%;
+                    clear: both;
+                    margin-right:11px;
+                    padding: 12px 12px 20px 12px;
+                    text-align: center;
+                    position: relative;
+                    background-color: #f7f7f7;">
+                    <div class="item-title" >
+                          <a href="#" style="color:#ff3c20;">
+                              صندلی اداری  
                           </a>
                       </div>
                   <div class="item-price">
 
-                      <strong>12،000،000 تومان </strong>
+                      <strong style="color:#ff3c20;">تماس بگیرید </strong>
 
                   </div>
                 </div>
                 <div class="clear" style="height: 25px"></div>
              <div class="banners banners6">
                                 <div class="banner">
-                                    <a href="#"><img src="img/12-270x270.jpg " sizes="163px" alt="image"></a>
+                                    <a href="#"><img src="img/12-270x270.jpg "style="margin-right:11px;" sizes="163px" alt="image"></a>
                                 </div>
+                                <div class="col-sm-12 col-xs-12" style="width: 100%;
+                                clear: both;
+                                margin-right:11px;
+                                padding: 12px 12px 20px 12px;
+                                text-align: center;
+                                position: relative;
+                                background-color: #f7f7f7;">
                                 <div class="item-title">
                                         <a href="#">
-                                            اپل واچ 
+                                             حوله 
                                         </a>
                                     </div>
                                 <div class="item-price">
         
-                                    <strong>12،000،000 تومان </strong>
+                                    <strong style="color:#ff3c20;">200،000 تومان </strong>
         
                                 </div>
                             </div>
                             
-                            
+                        </div>           
                             
 </div>
-      
+</div>     
      
 <div class="col-sm-2 col-xs-12">
         <div class="banners banners6">
                 <div class="banner">
-                    <a href="#"><img src="img/8-270x270.jpg " sizes="163px" alt="image"></a>
+                    <a href="#"><img src="img/19-270x270.jpg " style="margin-right:25px;" sizes="163px" alt="image"></a>
                 </div>
+                <div class="col-sm-12 col-xs-12" style="width: 100%;
+                clear: both;
+                margin-right:25px;
+                padding: 12px 12px 20px 12px;
+                text-align: center;
+                position: relative;
+                background-color: #f7f7f7;">
                 <div class="item-title">
                       <a href="#">
-                          اپل واچ 
+                          آباژور  
                       </a>
                   </div>
               <div class="item-price">
 
-                  <strong>12،000،000 تومان </strong>
+                  <strong style="color:#ff3c20;">2،000،000 تومان </strong>
 
               </div>
             </div>
             <div class="clear" style="height: 25px"></div>
          <div class="banners banners6">
                             <div class="banner">
-                                <a href="#"><img src="img/12-270x270.jpg " sizes="163px" alt="image"></a>
+                                <a href="#"><img src="img/13-270x270.jpg " sizes="163px" style="margin-right:25px;" alt="image"></a>
                             </div>
+                            <div class="col-sm-12 col-xs-12" style="width: 100%;
+                            clear: both;
+                            margin-right:25px;
+                            padding: 12px 12px 20px 12px;
+                            text-align: center;
+                            position: relative;
+                            background-color: #f7f7f7;">
                             <div class="item-title">
                                     <a href="#">
-                                        اپل واچ 
+                                        کیف عروسکی 
                                     </a>
                                 </div>
                             <div class="item-price">
     
-                                <strong>12،000،000 تومان </strong>
+                                <strong style="color:#ff3c20;">65،000 تومان </strong>
     
                             </div>
                         </div>
-                        
-                        
-                        
+                     
 </div>
   
- 
-                                          
-                                         
-               </div>
+</div>
+   </div>
+               
                <div class="col-sm-6 col-xs-12">
                     <div class="banners banners6">
                             <div class="banner">
-                                <a href="#"><img src="img/4-600x600.jpg " style="max-width:90%; margin-left:0;" sizes="406px"></a>
+                                <a href="#"><span class="label-product label-product-sale" style="right:70px;">
+                                        28%-</span><img src="img/4-600x600.jpg " style="max-width:81.8%;  margin-right:45px;" sizes="406px"></a>
                             </div>
+                            <div class="col-sm-12 col-xs-12" style="width:81.8%;
+                            clear: both;
+                            margin-right:45px;
+                            padding: 12px 12px 20px 12px;
+                            text-align: center;
+                            position: relative;
+                            background-color: #f7f7f7;">
+                            <div class="item-title">
+                                    <a href="#">
+                                        صندلی اداری  
+                                    </a>
+                                </div>
+                            <div class="item-price">
+    
+                                <strong style="color:#ff3c20;">1،500،000 تومان </strong>
+    
+                            </div>
+                        </div>
                         </div>
             
                         </div></div>
@@ -2035,10 +2299,237 @@
                                     
                                     
                                    
-                                                      
-                          
-                                        
-                                    
-        </body>
+            <footer id="footer-area">
+                    <div class="footer-links">
+                        <div class="container">
+                            <div class="col-sm-3 col-xs-12">
+                                    <div id="logo">
+                                            <a href="/">
+                                                <img class="img-responsive" src="img/logo-footer.png"style="margin-top:70px; margin-inline-start:-35px;" />
+                                            </a>
+                                        </div>
+                                
+                                        <div class="clear" style="height:25px"></div>         
+                                                                                       
+                        <ul>
+                         <li class="adres">تهران ، ستارخان شمالی ، کوچه یاس
+                       
+                         <li class="phone">021-859685762    09124567893</li>
+                         <li class="mail"> contact@opencartworks.com </li>
+                            <li class="timer"> ساعات کاری : 9 الی 22</li>
+                         </ul>
+                            </div>
+                            
+                            <div class="col-sm-2 col-xs-12">
+                                    <div class="clear" style="height:40px"></div>
+                                    <div class="box-information box-footer">
+                                            <div class="module clearfix">
+                                              <h6 class="modtitle">اطلاعات</h6>
+                                              <div class="modcontent">
+                                                <ul class="menu">
+                                                  <li><a href="#">درباره ما </a></li>
+                                                  <li><a href="#">پرسش و پاسخ</a></li>
+                                                  <li><a href="#"> سرویس و گارانتی </a></li>
+                                                  <li><a href="#">پشتیبانی</a></li>
+                                          <li><a href="#">ثبت سفارش</a></li>
+                                          <li><a href="#">پشتیبانی سفارش</a></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                                                                                                                  
+ </div>	
+
+
+
+
+
+                            <div class="col-sm-2 col-xs-12">
+                                    <div class="clear" style="height:40px"></div>
+                                    <div class="box-information box-footer">
+                                            <div class="module clearfix">
+                                              <h6 class="modtitle">حساب من</h6>
+                                              <div class="modcontent">
+                                                <ul class="menu">
+                                                  <li><a href="#"> برندها </a></li>
+                                                  <li><a href="#"> گواهینامه جوایز </a></li>
+                                                  <li><a href="#">  لینک مشتری  </a></li>
+                                                  <li><a href="#">پشتیبانی</a></li>
+                                          <li><a href="#">پرسش و پاسخ </a></li>
+                                          <li><a href="#">پیشنهادات خاص </a></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                                                                                                                  
+                                    </div>	
+                                    <div class="col-sm-2 col-xs-12">
+                                            <div class="clear" style="height:40px"></div>
+                                            <div class="box-information box-footer">
+                                                    <div class="module clearfix">
+                                                      <h6 class="modtitle"> سرویس ها</h6>
+                                                      <div class="modcontent">
+                                                        <ul class="menu">
+                                                          <li><a href="#"> ارتباط با ما </a></li>
+                                                          <li><a href="#">  عودتی ها </a></li>
+                                                          <li><a href="#">  نقشه سایت  </a></li>
+                                                          <li><a href="#">لینک مشتری</a></li>
+                                                  <li><a href="#"> سرویس مشتری  </a></li>
+                                                  <li><a href="#">پشتیبانی  </a></li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                                                                                                          
+                                            </div>
+                                            <div class="col-sm-3 col-xs-12">
+                                                    <div class="clear" style="height:40px"></div>
+                                       <div class="module box-footer so-instagram-gallery-ltr  ">
+                                                                 
+                                                                    <h6 class="modtitle"> گالری اینستاگرام</h6>
+                                                                 
+                                                        
+                                                                            <div class="form-group">
+                                                                                 
+                                                                    </div>
+                                                                        
+                                                                <div class="modcontent">
+                                                                    
+                                                                    <div class="so-instagram-gallery button-type2 4" id="instagram9325032511569609636">
+                                                                         
+                                                                               
+                                                                            <div class="instagram-items-inner instagram00-5 instagram01-4 instagram02-3 instagram03-2 instagram04-1">
+                                                                              
+                                                        
+                                                                                                                         
+                                                        
+                                                                                    <div class="col-sm-3 col-xs-12">
+                                                                                 
+                                                                                    <div class="instagram-item 0  first-item ">
+                                                                                        
+                                                                                 
+                                                                                    <div class="instagram_users">
+                                                                                        <div class="img_users tr">
+                                                                                            <a title="revo12021992" data-href="#" class="instagram_gallery_image gallery_image_instagram9325032511569609636" rel="" href="#">
+                                                                                                <img class="lazyload" data-sizes="auto" src="img/32881244_1730015997083851_7165230958516371456_n.jpg" style="max-width:200%" sizes="55px;" data-src="https://scontent.cdninstagram.com/vp/6dbf8ece7cfb37f41ca53ba01bb526c7/5E1A1141/t51.2885-15/sh0.08/e35/s640x640/32675178_1421901541289024_6070570328797478912_n.jpg?_nc_ht=scontent.cdninstagram.com" title="revo12021992" alt="revo12021992" sizes="55px;" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                 
+                                                                                </div>
+                                                                                 
+                                                                                                     
+                                                        
+                                                                                <div class="clear" style="height:10px"></div>
+                                                                                 
+                                                                                    <div class="instagram-item 1 ">
+                                                                                 
+                                                                                    <div class="instagram_users">
+                                                                                        <div class="img_users tr">
+                                                                                            <a title="revo12021992" data-href="https://www.instagram.com/p/BjZca8xBqxS/" class="instagram_gallery_image gallery_image_instagram9325032511569609636" rel="" href="https://scontent.cdninstagram.com/vp/b87c4e5ac798aed1aca4c16785d43ab0/5E33D097/t51.2885-15/sh0.08/e35/s640x640/32921884_1913192958970601_5570116088017977344_n.jpg?_nc_ht=scontent.cdninstagram.com">
+                                                                                                <img class="lazyload" data-sizes="auto" src="img/32921884_1913192958970601_5570116088017977344_n.jpg" style="max-width:200%" sizes="55px;" data-src="https://scontent.cdninstagram.com/vp/b87c4e5ac798aed1aca4c16785d43ab0/5E33D097/t51.2885-15/sh0.08/e35/s640x640/32921884_1913192958970601_5570116088017977344_n.jpg?_nc_ht=scontent.cdninstagram.com" title="revo12021992" alt="revo12021992" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                 
+                                                                                </div>
+                                                                                 
+                                                                                                     
+                                                                            </div>
+                                                                            <div class="col-sm-3 col-xs-12">
+                                                                                 
+                                                                                    <div class="instagram-item 2 ">
+                                                                                 
+                                                                                    <div class="instagram_users">
+                                                                                        <div class="img_users tr">
+                                                                                            <a title="revo12021992" data-href="https://www.instagram.com/p/BjZcZLiB7no/" class="instagram_gallery_image gallery_image_instagram9325032511569609636" rel="" href="https://scontent.cdninstagram.com/vp/aaa16ffad50dce0ab12545b0dcb7c1e2/5E2E31DC/t51.2885-15/sh0.08/e35/s640x640/32881244_1730015997083851_7165230958516371456_n.jpg?_nc_ht=scontent.cdninstagram.com">
+                                                                                                <img class="lazyload" data-sizes="auto" src="img/33432045_207343153325685_3086361969897242624_n.jpg"style="max-width:200%; margin-right:10px; " sizes="55px;" data-src="https://scontent.cdninstagram.com/vp/aaa16ffad50dce0ab12545b0dcb7c1e2/5E2E31DC/t51.2885-15/sh0.08/e35/s640x640/32881244_1730015997083851_7165230958516371456_n.jpg?_nc_ht=scontent.cdninstagram.com" title="revo12021992" alt="revo12021992" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                 
+                                                                                </div>
+                                                                                 
+                                                                                                     
+                                                                                <div class="clear" style="height:10px"></div>
+                                                                                
+                                                                                 
+                                                                                    <div class="instagram-item 3 ">
+                                                                                 
+                                                                                    <div class="instagram_users">
+                                                                                        <div class="img_users tr">
+                                                                                            <a title="revo12021992" data-href="https://www.instagram.com/p/BjZcXaphYer/" class="instagram_gallery_image gallery_image_instagram9325032511569609636" rel="" href="https://scontent.cdninstagram.com/vp/3c66e0c79dac8dab1612a54222f09685/5E2DEA76/t51.2885-15/sh0.08/e35/s640x640/33432045_207343153325685_3086361969897242624_n.jpg?_nc_ht=scontent.cdninstagram.com">
+                                                                                                <img class="lazyload" data-sizes="auto" src="img/14488111_354017724937121_1275730622647631872_n.jpg"style="max-width:200%; margin-right:10px;" sizes="55px;" data-src="https://scontent.cdninstagram.com/vp/3c66e0c79dac8dab1612a54222f09685/5E2DEA76/t51.2885-15/sh0.08/e35/s640x640/33432045_207343153325685_3086361969897242624_n.jpg?_nc_ht=scontent.cdninstagram.com" title="revo12021992" alt="revo12021992" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                 
+                                                                                </div>
+                                                                                 
+                                                                                                     
+                                                        
+                                                                                </div>
+                                                                               
+                                                                                <div class="col-sm-6 col-xs-12">
+                                                                                       
+                                                                                    <div class="instagram-item 4 ">
+                                                                                 
+                                                                                    <div class="instagram_users">
+                                                                                        <div class="img_users tr">
+                                                                                            <a title="revo12021992" data-href="https://www.instagram.com/p/BLN3Rq7AZRW/" class="instagram_gallery_image gallery_image_instagram9325032511569609636" rel="" href="https://scontent.cdninstagram.com/vp/268ebb403e4326403e39f3ccc82dea32/5E1EFE88/t51.2885-15/e35/14488111_354017724937121_1275730622647631872_n.jpg?_nc_ht=scontent.cdninstagram.com">
+                                                                                                <img class="lazyload" data-sizes="auto" src="img/32675178_1421901541289024_6070570328797478912_n.jpg"style="max-width:150%; margin-right:25px;" sizes="55px;" data-src="https://scontent.cdninstagram.com/vp/268ebb403e4326403e39f3ccc82dea32/5E1EFE88/t51.2885-15/e35/14488111_354017724937121_1275730622647631872_n.jpg?_nc_ht=scontent.cdninstagram.com" title="revo12021992" alt="revo12021992" />
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                 
+                                                                                </div>
+                                                                                 
+                                                                             
+                                                                            </div> 
+                                                                         
+                                                                    </div>
+                                                                </div> 
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                <div id="so-groups" class="right so-groups-sticky hidden-xs" style="top: 196px">
+                                                                        <a class="sticky-categories" data-target="popup" data-popup="#popup-categories"><span>Categories</span><i class="fa fa-align-justify"></i></a>
+                                                                            <a class="sticky-mycart" data-target="popup" data-popup="#popup-mycart"><span>Cart</span><i class="fa fa-shopping-cart"></i></a>
+                                                                            <a class="sticky-myaccount" data-target="popup" data-popup="#popup-myaccount"><span>Account</span><i class="fa fa-user"></i></a>
+                                                                            <a class="sticky-mysearch" data-target="popup" data-popup="#popup-mysearch"><span>Search</span><i class="fa fa-search"></i></a>
+                                                                            <a class="sticky-recent" data-target="popup" data-popup="#popup-recent"><span>Recent View</span><i class="fa fa-recent"></i></a>
+                                                                            <a class="sticky-backtop" data-target="scroll" data-scroll="html"><span>Go to Top</span><i class="fa fa-angle-double-up"></i></a></div>
+                                                                <div class="so-demos-preview-wrapper">
+                                                                        <a class="buy-demo" href="https://1.envato.market/PdbBX">
+                                                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 415.441 415.441" fill="#81b441" xml:space="preserve"> <path d="M324.63,22.533C135.173,226.428,80.309,371.638,80.309,371.638c41.149,47.743,111.28,43.72,111.28,43.72 	c73.921,2.31,119.192-43.522,119.192-43.522c91.861-92.516,80.549-355.302,80.549-355.302 			C372.769-23.891,324.63,22.533,324.63,22.533z"></path><path d="M32.369,181.983c0,0-28.983,57.964,18.859,155.495L178.367,58.01C176.916,58.538,63.691,98.037,32.369,181.983z"></path>  </svg> <span> Buy <strong>eMarket</strong></span>
+                                                                        </a>
+                                                                        <div class="so-show-demos-preview so-show-demos">
+                                                                                <span class="so-text-demo">Demos</span>
+                                                                                <span class="so-demo-count">23</span>
+                                                                            </div>
+                                                                           
+                                                                        </div>	
+                                                
+                                                                <div class="copyright-w">
+                                                                        <div class="container">
+                                                                            <div class="copyright">
+                                                                                    کلیه حقوق این سایت متعلق به شرکت ژیار سافت می باشد. <a href="http://www.opencartworks.com/" target="_blank">OpenCartWorks.Com</a>
+                                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                            
+                                                                    
+                                                                
+                                                            </footer>
+                                                           
+                    </body>
+    
+              
         
         </html>
